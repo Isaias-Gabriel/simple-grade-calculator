@@ -11,7 +11,8 @@
         android:id="@+id/grade1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
         android:background="#FAFAFA"
         android:ems="10"
         android:hint="Grade 1"
@@ -20,16 +21,14 @@
         android:textColorHint="#898989"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/absences" />
 
     <EditText
         android:id="@+id/grade2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="40dp"
         android:background="#FAFAFA"
         android:ems="10"
         android:hint="@string/grade_2"
@@ -38,15 +37,14 @@
         android:textColorHint="#898989"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/grade1" />
 
     <EditText
         android:id="@+id/absences"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="92dp"
         android:background="#FAFAFA"
         android:ems="10"
         android:hint="Absences"
@@ -56,32 +54,31 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGrade2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/calculateButton"
         android:layout_width="122dp"
         android:layout_height="56dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
         android:background="#EFA8A8"
         android:text="Calculate"
         app:backgroundTint="#EFA8A8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAbsense" />
+        app:layout_constraintTop_toBottomOf="@+id/grade2" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="114dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton"
+        app:layout_constraintVertical_bias="0.394" />
 </androidx.constraintlayout.widget.ConstraintLayout>

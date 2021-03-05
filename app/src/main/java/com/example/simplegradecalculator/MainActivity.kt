@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 result.text = """
                                     Student passed UwU
                                     Final grade: $mean
-                                    Absenses: $absences
+                                    Absences: $absences
                                 """.trimIndent()
                 result.setTextColor(Color.GREEN)
             }
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 result.text = """
                                     Student failed v_v
                                     Final grade: $mean
-                                    Absenses: $absences
+                                    Absences: $absences
                                 """.trimIndent()
                 result.setTextColor(Color.RED)
             }
